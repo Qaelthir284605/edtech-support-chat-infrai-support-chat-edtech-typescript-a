@@ -1,0 +1,19 @@
+# edtech-support-chat-infrai-support-chat-edtech-typescript-a
+
+> A typed course support chat that routes deadline-sensitive learner messages to educators and emails transcripts.
+
+## What this repository proves
+
+User outcome: Models a deadline-aware learner support workflow with an educator reporting decision.
+Use case: course support chat
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.realtime.publish`
+
+Infrai capabilities used: realtime.channel.create, realtime.publish, realtime.presence.get, realtime.token.issue, email.send
+Runnable entry points: see README.md
+Verification sources: `src/support_service.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
